@@ -1,0 +1,58 @@
+$color: #808080;
+
+.page {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 25px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.calendar {
+  position: relative;
+}
+
+.cells {
+  color: $color;
+  height: 45px;
+  width: 50%;
+  min-width: 300px;
+}
+
+.primary::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  color: #000;
+  background-color: $color;
+}
+
+.primary {
+  font-size: 16px;
+}
+
+.secondary {
+  font-size: 12px;
+}
+
+.event {
+  position: absolute;
+  z-index: 100;
+  left: 60px;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color: #e2ecf5;
+  border-left: 3px solid #6e9ecf;
+  padding-left: 5px;
+
+  &__overlap {
+    margin-left: 200px;
+    width: 100px;
+  }
+}
