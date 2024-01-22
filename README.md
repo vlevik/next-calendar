@@ -1,4 +1,5 @@
 ## Getting Started
+Node.js version >= v18.17.0 is required.
 
 To start the project:
 ```
